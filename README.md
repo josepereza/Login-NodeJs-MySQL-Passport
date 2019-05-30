@@ -24,17 +24,17 @@ Este login tiene los features de Crear usuarios, Encriptar sus contraseñas con 
 # Managing Environment Variables
 
 With dotenv, you can define all of your variables in a .env file.
-
+ ```ruby
 DB_HOST=localhost
 USER=sam
-
+```
 Then, dotenv will assign new keys to process.env and leave existing values untouched.
-
+ ```ruby
 require("dotenv").config();
 
 console.log(process.env.USER); // => max
 console.log(process.env.DB_HOST); // => localhost
-
+```
  **************************************************** 
  # .env 
  Debemos crear un archivo  .env  en el directorio raiz del proyecto y en el
